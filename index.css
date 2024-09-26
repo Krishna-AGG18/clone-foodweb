@@ -1,0 +1,72 @@
+body{
+    margin: 0px;
+}
+.nav{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-content: space-evenly;
+    box-shadow: 4px 4px 4px rgb(110, 109, 109);
+}
+#item1{
+    grid-row: 1/ span 2;
+}
+#item2{
+    grid-area: 1/2/3/2;
+}
+#item3{
+    grid-area:2/2/3/3;
+}
+#item4{
+    grid-area:2/4/3/5;
+}
+#item5{
+    grid-area:2/5/3/6;
+}
+#item6{
+    grid-area:2/6/3/7;
+}
+#item7{
+    grid-area: 2/7/3/8;
+}
+#item8{
+    grid-area:2/8/3/9;
+}
+#item12{
+    grid-area: 1/6/2/7;
+    padding: 10px;
+}
+#item13{
+    grid-area: 1/7/2/8;
+    padding: 10px;
+}
+#item9{
+    grid-area:1/8/2/9;
+    justify-content: right;
+    display: flex;
+    gap: 20px;
+}
+#item9 img{
+    width: 50px;
+    height: 50px;
+}
+#item12 input[type=text],#item13 input[type=text]{
+    padding:10px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 5px gray, -4px -4px 5px rgb(240, 119, 119);
+}
+.nav div{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+}
+#floater1 {
+    margin-top: 6px;
+    background-color: rgb(231, 19, 19);
+    font-size: 20px;
+    font-family: Showcard Gothic;
+    color: rgb(216, 240, 232);
+}
