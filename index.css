@@ -105,6 +105,10 @@ body{
     cursor: pointer;
     box-shadow: 4px 4px 4px black,-4px -4px 4px rgb(133, 74, 74);
 }
+#favourdiv div p button:hover{
+    transform: scale(1.2);
+}
+
 #favour{
     width: 200px;
 }
@@ -175,4 +179,82 @@ body{
     padding: 20px;
     font-size: 20px;
     border-bottom: 2px solid rgb(233, 172, 5)
+}
+button:hover{
+    transform: scale(1.2);
+}
+#foot{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: cursive;
+}
+#title{
+    font-size: 25px;
+}
+#foot div p button{
+    border: none;
+    border-radius: 15px;
+    background-color: orangered;
+    padding: 20px;
+    font-size: 15px;
+    transition: .7s;
+    box-shadow: 4px 4px 4px black, -4px -4px 4px blueviolet;
+}
+#foot div p button:hover{
+    background-color: rgb(53, 129, 129);
+    color:  rgb(240, 234, 234);
+    box-shadow: 4px 4px 4px blueviolet, -4px -4px 4px black;
+    font-weight: bolder;
+}
+#foot:hover{
+    margin: 10px;
+    border: 5px orange dashed;
+    box-shadow: 4px 4px 5px red, -4px -4px 4px red;
+}
+#title2{
+    background-color: rgb(233, 55, 55);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+    transition: 5s transform;
+}
+#title2:hover{
+    transform: rotateY(360deg);
+}
+#prof{
+    top: 0;
+    position: fixed;
+    width: 320px;
+    height: 100vh;
+    left: -360px;
+    background-color: rgb(24, 20, 20);
+    transition: 2s;
+    padding: 20px;
+    gap: 20px;
+    overflow: hidden;
+    color: white;
+    filter: opacity(90%);
+    font-family: Arial;
+}
+#prof:target{
+    left: 0px;
+}
+#prof div{
+    padding: 20px;
+}
+#prof div button{
+    border: none;
+    background-color: orangered;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-family: arial;
+}
+#q1, #q2, #q3, #q4,#q5, #q6{
+    font-size: xx-large;
+    font-family: cursive;
+    color: rgb(105, 31, 31);
+    display: none;
 }
