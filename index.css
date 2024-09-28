@@ -60,7 +60,7 @@ body{
 }
 .nav div{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 10px;
     cursor: pointer;
 }
@@ -209,6 +209,7 @@ button:hover{
 #foot:hover{
     margin: 10px;
     border: 5px orange dashed;
+    transform: scale(1.01);
     box-shadow: 4px 4px 5px red, -4px -4px 4px red;
 }
 #title2{
@@ -220,7 +221,8 @@ button:hover{
     transition: 5s transform;
 }
 #title2:hover{
-    transform: rotateY(360deg);
+    transform:scale(1.5);
+
 }
 #prof{
     top: 0;
@@ -253,8 +255,37 @@ button:hover{
     font-family: arial;
 }
 #q1, #q2, #q3, #q4,#q5, #q6{
-    font-size: xx-large;
+    font-size: large;
     font-family: cursive;
     color: rgb(105, 31, 31);
-    display: none;
+    display: none ;
+    padding:20px;
+    border: 2px goldenrod dashed;
+    margin: 10px;
+    border-radius: 10px;
 }
+#item3:hover~#q1{
+    grid-area: 3/1/4/11;
+    display: block;
+}
+#item4:hover~#q2{
+    grid-area: 3/1/4/11;
+    display: block;
+}
+#item5:hover~#q3{
+    grid-area: 3/1/4/11;
+    display: block;
+}
+#item6:hover~#q4{
+    grid-area: 3/1/4/11;
+    display: block;
+}
+#item7:hover~#q5{
+    grid-area: 3/1/4/11;
+    display: block;
+}
+#item8:hover~#q6{
+    grid-area: 3/1/4/11;
+    display: block;
+}
+
